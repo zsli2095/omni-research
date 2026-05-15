@@ -292,7 +292,7 @@ const categoryColors = {
   proprietary: { bg: "#2a1a2a", fg: "#b888c8", label: "Proprietary" },
 };
 
-export default function AudioModelComparison() {
+function AudioModelComparison() {
   const [expanded, setExpanded] = useState(null);
   const [view, setView] = useState("cards");
   const [filter, setFilter] = useState("all");
