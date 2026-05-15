@@ -1,34 +1,3 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Interactive comparison of audio model waveform generation approaches."
-    />
-    <title>Audio Model Waveform Generation Comparison</title>
-    <style>
-      body {
-        margin: 0;
-        background: #0a0a0f;
-      }
-    </style>
-  </head>
-  <body>
-    <noscript>This page needs JavaScript enabled to show the comparison.</noscript>
-    <div id="root"></div>
-
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.production.min.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
 const models = [
   {
     name: "Moshi",
@@ -459,7 +428,3 @@ function AudioModelComparison() {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AudioModelComparison />);
-
-    </script>
-  </body>
-</html>
