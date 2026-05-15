@@ -16,12 +16,11 @@
     <script type="text/babel" src="vocoders.jsx"></script>
 
     <script type="text/babel">
-        // This function waits for the file above to load before trying to render
         const renderApp = () => {
             try {
                 const root = ReactDOM.createRoot(document.getElementById('root'));
-                // Make sure "App" matches the function name in your vocoders.jsx
-                root.render(<App />);
+                // Changed from <App /> to match your actual function name!
+                root.render(<AudioModelComparison />);
             } catch (err) {
                 console.error("Render error:", err);
             }
